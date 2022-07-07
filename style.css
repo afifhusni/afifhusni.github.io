@@ -1,0 +1,253 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/*Navbar*/
+.navbar-brand {
+  font-weight: 1000;
+  font-size: 25px;
+}
+
+.nav-link {
+  font-weight: 550;
+  margin-right: 25px;
+  font-size: 15px;
+}
+
+/* Jumbotron */
+.jum1 {
+  background-image: url(jumbotron.png);
+  background-size: cover;
+  height: 499px;
+  text-align: center;
+}
+
+.judul {
+  padding-top: 126px;
+}
+
+.display-4 {
+  font-weight: 800;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.lead {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.btn-success {
+  font-size: 15px;
+  text-align: center;
+}
+
+.btn-success a {
+  text-decoration: none;
+  font-weight: 550;
+}
+
+/* About Us */
+.about {
+  font-size: 15px;
+  font-weight: 550;
+  color: #348e38;
+  padding-top: 49px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.a1 {
+  font-size: 15px;
+  font-weight: 50;
+  padding-top: 16px;
+}
+
+.bg2 {
+  width: 420px;
+  height: 295px;
+}
+
+/* Rate */
+.card {
+  border-radius: 20px;
+}
+
+.card-body h2 {
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.card-text {
+  font-size: 13px;
+  font-weight: 50;
+}
+
+.card i {
+  color: #348e38;
+}
+
+/* Gallery */
+.bg3 {
+  margin-top: 125px;
+}
+
+#gallery img {
+  border-radius: 20px;
+}
+
+/* Contacts */
+
+#contacts a {
+  text-decoration: none;
+  color: white;
+}
+
+.fa-calendar-days,
+.fa-clock {
+  color: #348e38;
+}
+
+/* Follow Us */
+.wrapper {
+  display: inline-flex;
+}
+
+.wrapper .icon {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.wrapper .icon span {
+  height: 50px;
+  width: 50px;
+  display: block;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.wrapper .icon span i {
+  line-height: 50px;
+  color: #348e38;
+}
+
+.wrapper .facebook:hover span,
+.wrapper .instagram:hover span,
+.wrapper .linkedin:hover span,
+.wrapper .twitter:hover span {
+  background-color: #348e38;
+}
+
+.wrapper .facebook:hover span i,
+.wrapper .instagram:hover span i,
+.wrapper .linkedin:hover span i,
+.wrapper .twitter:hover span i {
+  color: white;
+}
+
+/* Icon WA */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+.whatsapp-icon {
+  margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .whatsapp-icon {
+    margin-top: 15px;
+  }
+
+  .whatsapp_float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+  }
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+  .navbar-brand {
+    color: white !important;
+  }
+
+  .btn-success {
+    border-radius: 20px;
+  }
+
+  .display-4 {
+
+    font-weight: 800;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 45px;
+  }
+
+  .nav-link {
+    color: white !important;
+  }
+
+  .tombol {
+    border-radius: 50px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+  }
+
+  .bg2 {
+    width: 482px;
+    height: 295px;
+  }
+
+  #icons-wa {
+    padding-left: 93%;
+  }
+
+}
